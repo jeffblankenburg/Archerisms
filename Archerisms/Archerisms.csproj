@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EDB4CC66-98DF-42DE-B5A1-D779501F4717}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Archerisms</RootNamespace>
+    <AssemblyName>Archerisms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Archerisms.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Archerisms.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoundByte.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\baveuse.ttf" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\uncensored\CherylTunt\allyouhavetosay.mp3" />
+    <Content Include="audio\uncensored\CherylTunt\duhNoShit.mp3" />
+    <Content Include="audio\uncensored\CherylTunt\needhelpNoShit.mp3" />
+    <Content Include="audio\uncensored\CyrilFiggis\bulletinboard.mp3" />
+    <Content Include="audio\uncensored\CyrilFiggis\hard2explain.mp3" />
+    <Content Include="audio\uncensored\CyrilFiggis\prettybig.mp3" />
+    <Content Include="audio\uncensored\CyrilFiggis\weirdthatway.mp3" />
+    <Content Include="audio\uncensored\CyrilFiggis\whatamigoingtotellher.mp3" />
+    <Content Include="audio\uncensored\LanaKane\bang_dudes.mp3" />
+    <Content Include="audio\uncensored\LanaKane\Classic_Her.mp3" />
+    <Content Include="audio\uncensored\LanaKane\dontspeaktome.mp3" />
+    <Content Include="audio\uncensored\LanaKane\dont_speak.mp3" />
+    <Content Include="audio\uncensored\LanaKane\get_out.mp3" />
+    <Content Include="audio\uncensored\LanaKane\get_the_porno.mp3" />
+    <Content Include="audio\uncensored\LanaKane\goAlready.mp3" />
+    <Content Include="audio\uncensored\LanaKane\hitMe.mp3" />
+    <Content Include="audio\uncensored\LanaKane\ill_be_here.mp3" />
+    <Content Include="audio\uncensored\LanaKane\is_that_what.mp3" />
+    <Content Include="audio\uncensored\LanaKane\jointsTampons.mp3" />
+    <Content Include="audio\uncensored\LanaKane\milton_berle.mp3" />
+    <Content Include="audio\uncensored\LanaKane\Nope.mp3" />
+    <Content Include="audio\uncensored\LanaKane\personalaffairs.mp3" />
+    <Content Include="audio\uncensored\LanaKane\strapInstrapOn.mp3" />
+    <Content Include="audio\uncensored\LenTrexler\nice_things.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\ants.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\crack_whore_red.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\drinkallday.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\dumbStupid.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\forTheRecord.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\icewater.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\nameAnoun.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\nameAplace.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\Open_Salad.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\Pez_Dispenser.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\rhetorical.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\same_entitled_crap.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\theresAniche.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\trying2parent.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\whorediot.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\Whore_Island.mp3" />
+    <Content Include="audio\uncensored\MaloryArcher\wordsFailedMe.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\coochChili.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\geeksBadAss.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\getusedtothis.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\GoodPussy.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\holyShitSpace.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\internets.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\Newsletters.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\nice_things.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\noLimitUnicorn.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\snacks.mp3" />
+    <Content Include="audio\uncensored\PamPoovey\workplacetopic.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\analyzeData.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\aRuse.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\BabyLSD.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\bestGrandmaEver.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\Bitch_Sundance.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\BloodyMaryPrayer.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\candyhatingbaby.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\certainthickness.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\cookieelves.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\Cosplay_Enthusiasts.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\dangerZone.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\uncensored\SterlingArcher\deadPrimeMinister.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\donotwindherup.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\drankTooMuch.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\drinkingArm.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\fingeredEw.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\funnyword.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\grievingProcess.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\gummiBears.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\hogsOfWar.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\howsThatRacist.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\justpout.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\k_log.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\lana.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\last_words.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\laughingAtName.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\leaveamessage.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\lemonCurd.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\life_insur.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\liquorandtherapy.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\lying is 95%25.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\makingyoutalk.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\missZima.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\mutinyOfClowns.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\notpassable.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\nowImDone.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\pagingDrBirthdayBoy.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\playCards.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\richProblems.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\Security_Atrocious.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\sneezeglitter.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\Spite_Me.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\thatmuchmoney.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\u2oweApology.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\Ugly_Cry.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\Used_To_Pretend.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\whatelsecouldgowrong.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\whore_island.mp3" />
+    <Content Include="audio\uncensored\SterlingArcher\zentai.mp3" />
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\CherylTunt.png" />
+    <Content Include="images\Cyril.png" />
+    <Content Include="images\LanaKane.png" />
+    <Content Include="images\LenTrexler.png" />
+    <Content Include="images\Malory.png" />
+    <Content Include="images\PamPoovey.png" />
+    <Content Include="images\SterlingArcher.png" />
+    <Content Include="PanoramaImage.png" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="audio\censored\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
