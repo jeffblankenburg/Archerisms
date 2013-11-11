@@ -47,7 +47,7 @@ namespace Archerisms
             SoundBytes.Add(new SoundByte { CharacterID = 0, Name = "you have a certain thickness", MediaLocation = "/audio/uncensored/SterlingArcher/certainthickness.mp3" });
             SoundBytes.Add(new SoundByte { CharacterID = 0, Name = "what else could go wrong?", MediaLocation = "/audio/uncensored/SterlingArcher/whatelsecouldgowrong.mp3" });
             SoundBytes.Add(new SoundByte { CharacterID = 0, Name = "not passable", MediaLocation = "/audio/uncensored/SterlingArcher/notpassable.mp3" });
-            SoundBytes.Add(new SoundByte { CharacterID = 0, Name = "lying is 95%", MediaLocation = "/audio/uncensored/SterlingArcher/lyingis95%.mp3" });
+            SoundBytes.Add(new SoundByte { CharacterID = 0, Name = "lying is 95%", MediaLocation = "/audio/uncensored/SterlingArcher/lyingis95.mp3" });
             SoundBytes.Add(new SoundByte { CharacterID = 0, Name = "cookie elves", MediaLocation = "/audio/uncensored/SterlingArcher/cookieelves.mp3" });
             SoundBytes.Add(new SoundByte { CharacterID = 0, Name = "leave a message at the tone", MediaLocation = "/audio/uncensored/SterlingArcher/leaveamessage.mp3" });
             SoundBytes.Add(new SoundByte { CharacterID = 0, Name = "funny word", MediaLocation = "/audio/uncensored/SterlingArcher/funnyword.mp3" });
